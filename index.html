@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="reset.css" />
+  </head>
+  <body>
+    <div class="flex-container">
+      <div class="one"><h1 class="">Etch a Sketch</h1></div>
+      <div class="content">
+        <div class="board"></div>
+        <div class="buttons" style="margin: 10px 0">
+          <button class="button-6" onClick="changeColor('black')">Black</button>
+          <button class="button-6" onClick="changeColor('white')">
+            Erasor
+          </button>
+          <button class="button-6" onClick="changeColor('gray')">Gray</button>
+          <button class="button-6" onClick="changeColor('random')">
+            Random
+          </button>
+          <button class="button-6" onClick="resetGrid()">Reset</button>
+        </div>
+        <input
+          type="text"
+          placeholder="Size of board"
+          value="16"
+          class="input"
+        />
+        <button class="button-6" style="margin-left: 10px" id="setSize">
+          Set Size
+        </button>
+      </div>
+    </div>
+    <script src="index.js"></script>
+  </body>
+</html>
